@@ -30,9 +30,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common Xdroid OSS stuff.
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
+XDROID_PIXEL_BOOT := 1440
+XDROID_MAINTAINER := DenastySS
+
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
